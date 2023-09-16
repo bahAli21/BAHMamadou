@@ -23,6 +23,7 @@
     require_once 'views/contact.php';
     require_once 'views/footer.php';
  ?>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

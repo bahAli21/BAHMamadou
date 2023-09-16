@@ -1,0 +1,13 @@
+/* BAH MAMADOU */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* Import other CSS files */
+@import url('config.css');
+@import url('header.css');
+@import url('home.css');
+@import url('about.css');
+@import url('education.css');
+@import url('skills.css');
+@import url('contact.css');
+@import url('footer.css');
+@import url('animation.css');
+@import url('media.css');
