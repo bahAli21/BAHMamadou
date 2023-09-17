@@ -12,16 +12,16 @@
           </p>
 
           <div class="btn-box">
-              <a href="#" class="btn">Hire Me</a>
-              <a href="#" class="btn">Let's Talk</a>
+              <a href="#" class="btn" aria-label="Engagez-moi">Hire Me</a>
+              <a href="#contact" class="btn" aria-label="Discutons">Let's Talk</a>
               <span class="animate" style="--i:5;"></span>
           </div>
       </div>
 
       <div class="home-sci">
-          <a href="#"><i class='bx bxl-facebook'></i></a>
-          <a href="#"><i class='bx bxl-twitter'></i></a>
-          <a href="#"><i class='bx bxl-linkedin'></i></a>
+          <a href="#" aria-label="my github"><i class='bx bxl-github'></i></a>
+          <a href="#" aria-label="my twitter"><i class='bx bxl-twitter' ></i></a>
+          <a href="#" aria-label="my linkedin"><i class='bx bxl-linkedin'></i></a>
           <span class="animate" style="--i:6;"></span>
       </div>
 

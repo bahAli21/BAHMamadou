@@ -54,3 +54,11 @@
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+.full-txt {
+  display: none;
+}
+
+.etc {
+  display: none;
+}

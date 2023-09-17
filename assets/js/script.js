@@ -55,3 +55,11 @@ window.onscroll = () => {
         footer.classList.remove('show-animate');
     }
 }
+
+const moreButton = document.getElementById('more');
+    const fullText = document.querySelector('.full-txt');
+
+    moreButton.addEventListener('click', () => {
+        fullText.style.display = 'block';
+        moreButton.style.display = 'none';
+    });

@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('/images/home.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -27,7 +26,7 @@
 
 .home-content .text-animate {
     position: relative;
-    width: 43.8rem;
+    width: 44.8rem;
 }
 
 .home-content .text-animate h3 {
@@ -38,7 +37,7 @@
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
-    background-position: -33rem 0;
+    background-position: -44rem 0;
 }
 
 .home.show-animate .home-content .text-animate h3 {
