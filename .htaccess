@@ -1,0 +1,11 @@
+# Bloquer l'accès à ces répertoires et fichiers
+RewriteEngine On
+
+# Bloquer l'accès à /assets/
+RewriteRule ^assets/ - [F]
+
+# Bloquer l'accès à /views/
+RewriteRule ^views/ - [F]
+
+# Bloquer l'accès à .htaccess
+RewriteRule ^\.htaccess$ - [F]
