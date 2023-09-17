@@ -48,5 +48,39 @@
             </div>
         </div>
 
+        <div class="education-column">
+          <h3 class="title">Expérience<span class="animate scroll" style="--i:5;"></span></h3>
+
+          <div class="education-box">
+
+              <div class="education-content">
+                  <div class="content">
+                      <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2023</div>
+                      <h3>Projet Personnel - Jeu du Serpent (Snake) et 2048 en PHP</h3>
+                      <p>J'ai développé deux projets personnels : le jeu classique du Serpent (Snake) en utilisant le langage C++ et une version du jeu 2048 en PHP. Ces projets m'ont permis de renforcer mes compétences en programmation, de découvrir les principes du développement de jeux et d'approfondir mes connaissances en PHP.</p>
+                  </div>
+              </div>
+
+              <div class="education-content">
+                  <div class="content">
+                      <div class="year"><i class='bx bxs-calendar'></i> 2023 - Présent</div>
+                      <h3>Développeur Web - Réseau Social BConnect</h3>
+                      <p>Je travaille actuellement sur le développement de BConnect, une mini-plateforme de réseau social en utilisant PHP, MySQL et JavaScript. Ce projet implique le développement côté serveur, la gestion de bases de données, la conception front-end et la sécurité web. Date de fin prévue : 2 janvier 2024.</p>
+                  </div>
+              </div>
+
+              <div class="education-content">
+                <div class="content">
+                    <div class="year"><i class='bx bxs-calendar'></i> Mars 2023 - Juin 2023</div>
+                    <h3>Simulations de Réseaux Informatiques</h3>
+                    <p>J'ai réalisé des simulations de réseaux informatiques de manière autonome. Mon expérience comprend la création de configurations réseau, la gestion des adresses IP, la résolution de problèmes de connectivité et l'optimisation des performances.</p>
+                </div>
+            </div>
+
+              <span class="animate scroll" style="--i:6;"></span>
+          </div>
+      </div>
+
+
     </div>
 </section>

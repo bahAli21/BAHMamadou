@@ -12,7 +12,7 @@
     z-index: 99;
 }
 
-.home-content h1 {
+.home-content h2 {
     position: relative;
     display: inline-block;
     font-size: 5.6rem;
@@ -20,16 +20,16 @@
     line-height: 1.3;
 }
 
-.home-content h1 span {
+.home-content h2 span {
     color: var(--text-color);
 }
 
 .home-content .text-animate {
     position: relative;
-    width: 32.8rem;
+    width: 44.8rem;
 }
 
-.home-content .text-animate h3 {
+.home-content .text-animate h5 {
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
@@ -40,12 +40,12 @@
     background-position: -33rem 0;
 }
 
-.home.show-animate .home-content .text-animate h3 {
+.home.show-animate .home-content .text-animate h5 {
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
 
-.home-content .text-animate h3::before {
+.home-content .text-animate h5::before {
     content: '';
     position: absolute;
     top: 0;
@@ -56,7 +56,7 @@
     z-index: -1;
 }
 
-.home.show-animate .home-content .text-animate h3::before {
+.home.show-animate .home-content .text-animate h5::before {
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
 }
