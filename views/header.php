@@ -1,6 +1,6 @@
 <!-- header design -->
 <header class="header">
-    <a href="#" class="logo">Mamadou<span class="animate" style="--i:1;"></span></a>
+    <a href="#" class="logo">BAH.<span class="animate" style="--i:1;"></span></a>
 
     <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
 
