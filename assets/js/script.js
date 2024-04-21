@@ -65,23 +65,24 @@ const moreButton = document.getElementById('more');
     });
 
 
-function sendEmail(nom, subject, corps, email) {
-    let btnSend = document.getElementById("btnEnvoyerMail");
+function sendEmail() {
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Empêcher le formulaire de se soumettre normalement
 
-    // Définir un tableau de valeurs pour l'animation
-    let animationValues = ["partage.", "partage..", "partage...", "partage...."];
-    let currentIndex = 0;
+        // Créer un dictionnaire pour stocker les valeurs des champs de saisie
+        var formData = {};
 
-    // je mets à jour la valeur du bouton chaque deux secondes
-    let animationInterval = setInterval(function() {
-        btnSend.value = animationValues[currentIndex];
-        currentIndex = (currentIndex + 1) % animationValues.length; // Passons à la prochaine valeur
-    }, 2000);
+        // Sélectionner tous les champs de saisie dans le formulaire
+        var inputs = this.querySelectorAll('input, textarea');
 
-    // Envoie de l'e-mail après  8 secondes, pour bien faire l'effet animation
-    setTimeout(function() {
-        clearInterval(animationInterval); // j'arrête l'animation
-        btnSend.value = "Envoyer"; // Je remet la valeur initiale
+        // Parcourir chaque champ de saisie pour obtenir son ID et sa valeur
+        inputs.forEach(function(input) {
+            formData[input.id] = input.value; // Stocker la valeur dans le dictionnaire avec la clé correspondant à l'ID du champ
+        });
+
+        // Afficher le dictionnaire dans la console (à des fins de débogage)
+        console.log(formData);
+
         emailjs.send("service_ttnsqiv","template_l7baqas",{
             from_name: nom,
             email: email,
@@ -93,5 +94,5 @@ function sendEmail(nom, subject, corps, email) {
         }).catch(function(error) {
             alert("Une erreur est survenue lors de l'envoi du message : " + error);
         });
-    }, 8000); // 8 secondes de délai avant l'envoi de l'e-mail
+    });
 }
