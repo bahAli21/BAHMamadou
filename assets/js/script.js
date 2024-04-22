@@ -80,7 +80,7 @@ function sendEmail() {
             formData[input.id] = input.value; // Stocke la valeur dans le dictionnaire avec la clé correspondant à l'ID du champ
         });
 
-        emailjs.send("service_ttnsqiv","template_l7baqas",{
+        emailjs.send("service_ttnsqiv","template_siqlli9",{
             fullName: formData["fullName"],
             email: formData["email"],
             message: formData["message"],
