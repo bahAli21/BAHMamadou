@@ -79,9 +79,9 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
-      alert('Message envoyé ! Merci pour l\'intérêt que vous portez à mon portfolio.');
+      alert('Message envoyé ! Merci pour l intérêt que vous portez à mon portfolio.');
     }, (err) => {
       btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+      alert('une erreur est survenu lors de l'envoi de l'émail ');
     });
 });
