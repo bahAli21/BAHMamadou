@@ -80,19 +80,19 @@ function sendEmail() {
             formData[input.id] = input.value; // Stocke la valeur dans le dictionnaire avec la clé correspondant à l'ID du champ
         });
     
-        let sendBtn = document.getElementById('sendEmail');
-        sendBtn.value = "Envoi..."
+        //let sendBtn = document.getElementById('sendEmail');
+        //sendBtn.value = "Envoi..."
         emailjs.send("service_ttnsqiv","template_siqlli9",{
-            fullName: document.getElementById('fullName');,
-            email: document.getElementById('email');,
-            message: document.getElementById('message');,
-            subject: document.getElementById('subject');,
-            tel: document.getElementById('tel');,
+            fullName: document.getElementById('fullName').value,
+            email: document.getElementById('email').value,
+            message: document.getElementById('message').value,
+            subject: document.getElementById('subject').value,
+            tel: document.getElementById('tel').value,
         }).then(function (res) {
             alert("Votre message a été envoyé avec succès);
-            sendBtn.value = "Envoyer"
+            //sendBtn.value = "Envoyer"
         }).catch(function(error) {
-            sendBtn.value = "Envoyer"
+            //sendBtn.value = "Envoyer"
             alert("Une erreur est survenue lors de l'envoi du message : " + error);
         });
     });
