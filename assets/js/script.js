@@ -83,13 +83,13 @@ function sendEmail() {
         let sendBtn = document.getElementById('sendEmail');
         sendBtn.value = "Envoi..."
         emailjs.send("service_ttnsqiv","template_siqlli9",{
-            fullName: formData["fullName"],
-            email: formData["email"],
-            message: formData["message"],
-            subject: formData["subject"],
-            tel: formData["tel"],
+            fullName: "BAH",
+            email: "bah311802@gmail.com",
+            message: "testMessage",
+            subject: "TEST",
+            tel: "1111111111111",
         }).then(function (res) {
-            alert("Message envoyé avec succès, Merci d'avoir essayé notre site");
+            alert("Votre message a été envoyé avec succès);
             sendBtn.value = "Envoyer"
         }).catch(function(error) {
             sendBtn.value = "Envoyer"
