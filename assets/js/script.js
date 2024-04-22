@@ -67,28 +67,25 @@ const moreButton = document.getElementById('more');
 
 function sendEmail() {
     document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Empêcher le formulaire de se soumettre normalement
+        event.preventDefault(); // Empêche le formulaire de se soumettre normalement
 
-        // Créer un dictionnaire pour stocker les valeurs des champs de saisie
+        // Crée un dictionnaire pour stocker les valeurs des champs de saisie
         var formData = {};
 
-        // Sélectionner tous les champs de saisie dans le formulaire
+        // Sélectionne tous les champs de saisie dans le formulaire
         var inputs = this.querySelectorAll('input, textarea');
 
-        // Parcourir chaque champ de saisie pour obtenir son ID et sa valeur
+        // Parcour chaque champ de saisie pour obtenir son ID et sa valeur
         inputs.forEach(function(input) {
-            formData[input.id] = input.value; // Stocker la valeur dans le dictionnaire avec la clé correspondant à l'ID du champ
+            formData[input.id] = input.value; // Stocke la valeur dans le dictionnaire avec la clé correspondant à l'ID du champ
         });
 
-        // Afficher le dictionnaire dans la console (à des fins de débogage)
-        console.log(formData);
-
         emailjs.send("service_ttnsqiv","template_l7baqas",{
-            from_name: nom,
-            email: email,
-            message: corps,
-            from_subject: subject,
-            from_page_url: "https://bahali21.github.io/AzerType-Project-JS/",
+            fullName: formData["fullName"],
+            email: formData["email"],
+            message: formData["message"],
+            subject: formData["subject"],
+            tel: formData["tel"],
         }).then(function (res) {
             alert("Message envoyé avec succès, Merci d'avoir essayé notre site");
         }).catch(function(error) {
@@ -96,3 +93,5 @@ function sendEmail() {
         });
     });
 }
+
+sendEmail();
