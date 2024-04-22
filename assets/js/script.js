@@ -79,15 +79,15 @@ function sendEmail() {
         inputs.forEach(function(input) {
             formData[input.id] = input.value; // Stocke la valeur dans le dictionnaire avec la clé correspondant à l'ID du champ
         });
-        
+    
         let sendBtn = document.getElementById('sendEmail');
         sendBtn.value = "Envoi..."
         emailjs.send("service_ttnsqiv","template_siqlli9",{
-            fullName: "BAH",
-            email: "bah311802@gmail.com",
-            message: "testMessage",
-            subject: "TEST",
-            tel: "1111111111111",
+            fullName: document.getElementById('fullName');,
+            email: document.getElementById('email');,
+            message: document.getElementById('message');,
+            subject: document.getElementById('subject');,
+            tel: document.getElementById('tel');,
         }).then(function (res) {
             alert("Votre message a été envoyé avec succès);
             sendBtn.value = "Envoyer"
