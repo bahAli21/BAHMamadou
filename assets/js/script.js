@@ -83,11 +83,11 @@ function sendEmail() {
         //let sendBtn = document.getElementById('sendEmail');
         //sendBtn.value = "Envoi..."
         emailjs.send("service_ttnsqiv","template_siqlli9",{
-            fullName: document.getElementById('fullName').value,
-            email: document.getElementById('email').value,
+            from_fullName: document.getElementById('fullName').value,
+            from_email: document.getElementById('email').value,
             message: document.getElementById('message').value,
-            subject: document.getElementById('subject').value,
-            tel: document.getElementById('tel').value,
+            from_subject: document.getElementById('subject').value,
+            from_tel: document.getElementById('tel').value,
         }).then(function (res) {
             alert("Votre message a été envoyé avec succès);
             //sendBtn.value = "Envoyer"
