@@ -79,7 +79,9 @@ function sendEmail() {
         inputs.forEach(function(input) {
             formData[input.id] = input.value; // Stocke la valeur dans le dictionnaire avec la clé correspondant à l'ID du champ
         });
-
+        
+        let sendBtn = document.getElementById('sendEmail');
+        sendBtn.value = "Envoi..."
         emailjs.send("service_ttnsqiv","template_siqlli9",{
             fullName: formData["fullName"],
             email: formData["email"],
@@ -88,7 +90,9 @@ function sendEmail() {
             tel: formData["tel"],
         }).then(function (res) {
             alert("Message envoyé avec succès, Merci d'avoir essayé notre site");
+            sendBtn.value = "Envoyer"
         }).catch(function(error) {
+            sendBtn.value = "Envoyer"
             alert("Une erreur est survenue lors de l'envoi du message : " + error);
         });
     });
