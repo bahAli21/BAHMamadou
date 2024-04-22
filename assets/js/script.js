@@ -65,37 +65,23 @@ const moreButton = document.getElementById('more');
     });
 
 
-function sendEmail() {
-    document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Empêche le formulaire de se soumettre normalement
+const btn = document.getElementById('button');
 
-        // Crée un dictionnaire pour stocker les valeurs des champs de saisie
-        var formData = {};
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-        // Sélectionne tous les champs de saisie dans le formulaire
-        var inputs = this.querySelectorAll('input, textarea');
+   btn.value = 'Sending...';
 
-        // Parcour chaque champ de saisie pour obtenir son ID et sa valeur
-        inputs.forEach(function(input) {
-            formData[input.id] = input.value; // Stocke la valeur dans le dictionnaire avec la clé correspondant à l'ID du champ
-        });
-    
-        //let sendBtn = document.getElementById('sendEmail');
-        //sendBtn.value = "Envoi..."
-        emailjs.send("service_ttnsqiv","template_siqlli9",{
-            from_fullName: document.getElementById('fullName').value,
-            from_email: document.getElementById('email').value,
-            message: document.getElementById('message').value,
-            from_subject: document.getElementById('subject').value,
-            from_tel: document.getElementById('tel').value,
-        }).then(function (res) {
-            alert("Votre message a été envoyé avec succès);
-            //sendBtn.value = "Envoyer"
-        }).catch(function(error) {
-            //sendBtn.value = "Envoyer"
-            alert("Une erreur est survenue lors de l'envoi du message : " + error);
-        });
+   const serviceID = 'default_service';
+   const templateID = 'template_siqlli9';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Message envoyé ! Merci pour l\'intérêt que vous portez à mon portfolio.');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
     });
-}
-
-sendEmail();
+});
