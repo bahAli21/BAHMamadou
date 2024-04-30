@@ -64,24 +64,39 @@ const moreButton = document.getElementById('more');
         moreButton.style.display = 'none';
     });
 
-
+// Ajout d'un écouteur d'événements pour le survol du bouton submit
 const btn = document.getElementById('button');
-
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
-
-   btn.value = 'Sending...';
-
-   const serviceID = 'default_service';
-   const templateID = 'template_siqlli9';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Message envoyé ! Merci pour l intérêt que vous portez à mon portfolio.');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert('une erreur est survenu lors de l'envoi de l'émail ');
-    });
+btn.addEventListener('mouseover', function() {
+    btn.style.color = 'black'; // Changement de couleur du texte en noir
+    btn.style.fontWeight = 'bold';
 });
+
+document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const btn = document.getElementById('button');
+    btn.value = 'Sending...';
+
+    const serviceID = 'default_service';
+    const templateID = 'template_siqlli9';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.value = 'Send Email';
+            alert('Thank you for your message! I will get back to you soon.');
+            resetForm(); // Appele de ma fonction pour réinitialiser le formulaire
+        }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+        });
+});
+
+// Fonction pour réinitialiser le formulaire
+function resetForm() {
+    document.getElementById('form').reset();
+}
+
+
+
+
+
