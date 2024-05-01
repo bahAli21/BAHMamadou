@@ -33,6 +33,131 @@ body {
     color: var(--text-color);
 }
 
+/**********SKILLS***************/
+ .container {
+    width: 100%;
+    height: 100vh;
+    background: #1f242d;
+    /*display: grid;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills h2 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.progress-bar {
+    background: #959595;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar div {
+    height: 10px;
+    width: 0%;
+    border-radius: 5px;
+}
+
+.progress-bar div spa {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.csharp {
+    background: #e91e63;
+    animation: csharp 1s linear forwards;
+}
+
+.cplusplus {
+    background: #cddc39;
+    animation: cplusplus 1s linear forwards;
+}
+
+.js {
+    background: #00bcd4;
+    animation: js 1s linear forwards;
+}
+
+.php {
+    background: #ffeb3b;
+    animation: php 1s linear forwards;
+}
+
+.dotnet {
+    background: #9c27b0;
+    animation: dotnet 1s linear forwards;
+}
+
+.csharp spa{
+    border:1px solid #e91e63;
+}
+
+.cplusplus spa{
+    border:1px solid #cddc39;
+}
+
+.js spa{
+    border:1px solid #00bcd4;
+}
+
+.php spa{
+    border:1px solid #ffeb3b;
+}
+
+.dotnet spa{
+    border:1px solid #9c27b0;
+}
+
+@keyframes csharp {
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes cplusplus {
+    100%{
+        width: 69%;
+    }
+}
+
+@keyframes dotnet {
+    100%{
+        width: 57%;
+    }
+}
+
+@keyframes js {
+    100%{
+        width: 55%;
+    }
+}
+
+@keyframes php {
+    100%{
+        width: 50%;
+    }
+}
+
+/***FIN SKILLS*******/
+
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
