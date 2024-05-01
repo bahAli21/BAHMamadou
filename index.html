@@ -5,324 +5,208 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenue dans mon portfolio ! Je suis un développeur web Full-Stack passionné par la création de solutions innovantes et sécurisées.
-     Découvrez mes projets de développement web, ma passion pour la cybersécurité et mon engagement à créer un avenir numérique plus sûr.
-     Explorez mon travail et rejoignez-moi dans cette aventure technologique passionnante.">
     <title>BAH Mamadou</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">BAH.</a>
 
-    
-<!-- header design -->
-<header class="header">
-    <a href="#" class="logo">BAH.<span class="animate" style="--i:1;"></span></a>
+        <div class='bx bx-menu' id="menu-icon"></div>
 
-    <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <nav class="navbar">
-      <a href="#home" class="active" aria-label="Home">Home</a>
-      <a href="#about" aria-label="About">About</a>
-      <a href="#education" aria-label="Education">Education</a>
-      <a href="#skills" aria-label="Skills">Skills</a>
-      <a href="#contact" aria-label="Contact">Contact</a>
-
-        <span class="active-nav"></span>
-        <span class="animate" style="--i:2;"></span>
-    </nav>
-</header>
-    
-<!-- home section design -->
-  <section class="home show-animate" id="home">
-      <div class="home-content">
-          <h1>Hi, I'm <span>BAH Mamadou</span><span class="animate" style="--i:2;"></span></h1>
-          <div class="text-animate">
-              <h3>Computer science student</h3>
-              <span class="animate" style="--i:3;"></span>
-          </div>
-          <p>Je suis étudiant en deuxième année d'informatique à l'Université Claude Bernard Lyon 1,
-              avec une forte passion pour le développement web full-stack et la cybersécurité
-              <span class="animate" style="--i:4;"></span>
-          </p>
-
-          <div class="btn-box">
-              <a href="#" class="btn" aria-label="Engagez-moi">Hire Me</a>
-              <a href="#contact" class="btn" aria-label="Discutons">Let's Talk</a>
-              <span class="animate" style="--i:5;"></span>
-          </div>
-      </div>
-
-      <div class="home-sci">
-          <a href="#" aria-label="my github"><i class='bx bxl-github'></i></a>
-          <a href="#" aria-label="my twitter"><i class='bx bxl-twitter' ></i></a>
-          <a href="#" aria-label="my linkedin"><i class='bx bxl-linkedin'></i></a>
-          <span class="animate" style="--i:6;"></span>
-      </div>
-
-      <div class="home-imgHover"></div>
-      <span class="animate home-img" style="--i:7;"></span>
-  </section>
-
-<!-- about section design -->
-<section class="about" id="about">
-    <h2 class="heading">À propos <span>de Moi</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-    <div class="about-img">
-        <img src="assets/image/profile.jpg" alt="my picture">
-        <span class="circle-spin"></span>
-        <span class="animate scroll" style="--i:2;"></span>
-    </div>
-
-    <div class="about-content">
-        <h3>Développeur Web Full-Stack Passionné et Amateur de Cybersecurity<span class="animate scroll" style="--i:3;"></span></h3>
-        <p>
-          <p class="default-txt">
-           Je suis étudiant en deuxième année d'informatique à l'Université Claude Bernard Lyon 1. Je suis profondément passionné par la création de solutions web innovantes et sécurisées.
-           Mon voyage dans le monde de la technologie a commencé dès mon jeune âge,
-           et je me suis dévoué à perfectionner mes compétences en développement tant côté frontend que backend.
-           <span class="animate scroll" style="--i:4;"></span>
-         </p>
-          <p class="full-txt">
-           En plus de mes compétences en développement web, j'ai un vif intérêt pour la cybersécurité, avec pour objectif de rendre le monde numérique plus sûr pour tous les utilisateurs.
-           Que ce soit pour concevoir des interfaces utilisateur élégantes, optimiser les performances des bases de données ou sécuriser les applications web contre les menaces potentielles, je suis toujours prêt à relever un défi. Je crois que la technologie peut transformer les entreprises et améliorer la vie des gens, et je m'engage à en faire partie.
-           Quand je ne code pas, vous pouvez me trouver en train d'explorer les dernières tendances en cybersécurité, d'expérimenter de nouveaux langages de programmation ou tout simplement de savourer un bon livre. Travaillons ensemble pour construire un avenir plus sûr et plus connecté.
-          <span class="animate scroll" style="--i:4;"></span>
-         </p>
-            <span class="animate scroll" style="--i:4;"></span>
-        </p>
-
-        <div class="btn-box btns">
-            <button type="button" name="button" class="btn" id="more">En savoir plus</button>
-            <span class="animate scroll" style="--i:5;"></span>
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me 😊</h3>
+            <h1>BAH Mamadou</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>
+                Hello! I'm Bah Mamadou, a passionate 💻 software developer and cybersecurity enthusiast. I love building innovative solutions and securing digital assets.
+            </p>
+            <div class="social-media">
+                <a href="https://github.com/bahAli21"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/mamadou-bah-047979219/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://twitter.com/bahAli21"><i class='bx bxl-twitter'></i></a>
+                <a href="www.youtube.com/@mams5628"><i class='bx bxl-youtube'></i></a>
+            </div>
+            <a href="images/lettre.pdf" class="btn">Download CV</a>
         </div>
-    </div>
-</section>
 
-<!-- education section design -->
-<section class="education" id="education">
-    <h2 class="heading">Mon <span>Parcours</span><span class="animate scroll" style="--i:1;"></span></h2>
+        <!--<div class="home-img">
+            <img src="images/profile.jpg" alt="">
+        </div> -->
 
-    <div class="education-row">
-        <div class="education-column">
-            <h3 class="title">Éducation<span class="animate scroll" style="--i:2;"></span></h3>
+        <div class="about-img home-img ">
+            <img src="images/profile.jpg" alt="my picture">
+        </div>
+    </section>
 
-            <div class="education-box">
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i> 2023 - Présent</div>
-                        <h3>L2 Informatique - Université Claude Bernard Lyon 1 (en cours)</h3>
-                        <p>J'ai actuellement entamé ma deuxième année d'études en informatique à l'Université Claude Bernard Lyon 1,
-                          avec un accent particulier sur le développement web full-stack et jeux video <em>C++</em>.</p>
-                    </div>
-                </div>
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/profile.jpg" alt="">
+        </div>
 
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2023</div>
-                        <h3>L1 Mathématique Informatique - Université Claude Bernard Lyon 1</h3>
-                        <p>J'ai validé ma première année d'études en mathématique informatique à l'Université Claude Bernard Lyon 1 avec mention Très bien.</p>
-                    </div>
-                </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Software Developer & Student</h3>
+            <p>Je suis Bah Mamadou, étudiant en licence informatique à l'UCBL. Passionné par la cybersécurité, j'apprends activement et travaille sur des projets pratiques. Actuellement, je me concentre sur le développement d'applications avec .NET Core WPF en C# et .NET MAUI en C# pour les applications mobiles.</p>
+            <p id="hiddenContent" style="display: none;">En plus de mes études, je suis également impliqué dans des projets de développement logiciel en tant que développeur indépendant. Je suis particulièrement intéressé par la création d'applications innovantes qui résolvent des problèmes du monde réel et améliorent l'expérience utilisateur.
+                Mon objectif est de continuer à acquérir de l'expérience dans le domaine du développement logiciel tout en explorant de nouvelles technologies et en contribuant à des projets significatifs.</p>
+            <a id="toggleBtn" class="btn" style="cursor: pointer;">Read More</a>
+        </div>
+    </section>
 
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i> 2020 - 2021</div>
-                        <h3>Baccalauréat - Option Mathématiques (Mention Bien)</h3>
-                        <p>J'ai obtenu mon baccalauréat avec option mathématiques en 2021 avec la mention "Bien".</p>
-                    </div>
-                </div>
 
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class='bx bxs-calendar'></i> 2021 - 2022</div>
-                        <h3>Auto-formation OpenClassroom</h3>
-                        <p>Certification obtenue en développement web. <br>
-                           Programmez en orienté objet en PHP, <br>
-                           Adoptez une architecture MVC en PHP, <br>
-                           Apprenez à programmer avec JavaScript, MySQL,<br>
-                           ainsi qu'en réseau et cybersecurité . Administrez un système Linux, Réalisez un test d'intrusion web,, et Concevez votre réseau TCP/IP.</p>
-                    </div>
-                </div>
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Skills</span></h2>
 
-                <span class="animate scroll" style="--i:3;"></span>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi
+                    non laborum nisi alias iusto voluptatibus.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi
+                    non laborum nisi alias iusto voluptatibus.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi
+                    non laborum nisi alias iusto voluptatibus.</p>
+                <a href="#" class="btn">Read More</a>
             </div>
         </div>
+    </section>
 
-        <div class="education-column">
-          <h3 class="title">Expérience<span class="animate scroll" style="--i:5;"></span></h3>
+    <!-- project section design -->
+    <section class="project" id="project">
+        <h2 class="heading">Latest <span>Projects</span></h2>
 
-          <div class="education-box">
-
-              <div class="education-content">
-                  <div class="content">
-                      <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2023</div>
-                      <h3>Projet Personnel - Jeu du Serpent (Snake) et 2048 en PHP</h3>
-                      <p>J'ai développé deux projets personnels : le jeu classique du Serpent (Snake) en utilisant le langage C++ et une version du jeu 2048 en PHP. Ces projets m'ont permis de renforcer mes compétences en programmation, de découvrir les principes du développement de jeux et d'approfondir mes connaissances en PHP.</p>
-                  </div>
-              </div>
-
-              <div class="education-content">
-                  <div class="content">
-                      <div class="year"><i class='bx bxs-calendar'></i> 2023 - Présent</div>
-                      <h3>Développeur Web - Réseau Social BConnect</h3>
-                      <p>Je travaille actuellement sur le développement de BConnect, une mini-plateforme de réseau social en utilisant PHP, MySQL et JavaScript. Ce projet implique le développement côté serveur, la gestion de bases de données, la conception front-end et la sécurité web. Date de fin prévue : 2 janvier 2024.</p>
-                  </div>
-              </div>
-
-              <div class="education-content">
-                <div class="content">
-                    <div class="year"><i class='bx bxs-calendar'></i> Mars 2023 - Juin 2023</div>
-                    <h3>Simulations de Réseaux Informatiques</h3>
-                    <p>J'ai réalisé des simulations de réseaux informatiques de manière autonome. Mon expérience comprend la création de configurations réseau, la gestion des adresses IP, la résolution de problèmes de connectivité et l'optimisation des performances.</p>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="images/project1.jpg" alt="">
+                <div class="project-layer">
+                    <h4>CleanUp Pro</h4>
+                    <p>Développement d'un logiciel de nettoyage PC, CleanUp Pro, disponible sur Windows, réalisé avec C# / WPF.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
-              <span class="animate scroll" style="--i:6;"></span>
-          </div>
-      </div>
-
-
-    </div>
-</section>
-
-    
-
-<!-- skills section design -->
-  <section class="skills" id="skills">
-      <h2 class="heading">Mes <span>Compétences</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-      <div class="skills-row">
-          <div class="skills-column">
-              <h3 class="title">Compétences en Programmation<span class="animate scroll" style="--i:2;"></span></h3>
-
-              <div class="skills-box">
-                  <div class="skills-content">
-                      <div class="progress">
-                          <h3>PHP POO<span>85%</span></h3>
-                          <div class="bar"><span></span></div>
-                      </div>
-
-                      <div class="progress">
-                          <h3>C/C++<span>78%</span></h3>
-                          <div class="bar"><span></span></div>
-                      </div>
-
-                      <div class="progress">
-                          <h3>JavaScript <span>67%</span></h3>
-                          <div class="bar"><span></span></div>
-                      </div>
-
-                      <div class="progress">
-                          <h3>Python <span>45%</span></h3>
-                          <div class="bar"><span></span></div>
-                      </div>
-                  </div>
-
-                  <span class="animate scroll" style="--i:3;"></span>
-              </div>
-          </div>
-
-          <div class="skills-column">
-              <h3 class="title">Compétences Professionnelles<span class="animate scroll" style="--i:5;"></span></h3>
-
-              <div class="skills-box">
-                  <div class="skills-content">
-                      <div class="progress">
-                          <h3>Web Design <span>84%</span></h3>
-                          <div class="bar"><span></span></div>
-                      </div>
-
-                      <div class="progress">
-                          <h3>Développement Web <span>79%</span></h3>
-                          <div class="bar"><span></span></div>
-                      </div>
-
-                      <div class="progress">
-                          <h3>Réseaux, Attribution d'adresses IP.<span>63%</span></h3>
-                          <div class="bar"><span></span></div>
-                      </div>
-
-                      <div class="progress">
-                          <h3>Cybersécurité, Tests d'Intrusion Web  <span>35%</span></h3>
-                          <div class="bar"><span></span></div>
-                      </div>
-                  </div>
-
-                  <span class="animate scroll" style="--i:6;"></span>
-              </div>
-          </div>
-      </div>
-  </section>
-    
-
-<!-- Section de contact -->
-<section class="contact" id="contact">
-    <h2 class="heading">Contactez-<span>moi</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-    <form id="form">
-        <div class="input-box">
-            <div class="input-field">
-                <input type="text" placeholder="Nom Complet" id="from_fullName" name="from_fullName" required>
-                <span class="focus"></span>
+            <div class="project-box">
+                <img src="images/project2.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Monitoring Tool</h4>
+                    <p>Création d'un logiciel de monitoring (RAM, CPU, GPU, HDD...) avec C# / WPF.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
             </div>
-            <div class="input-field">
-                <input type="email" placeholder="Adresse Email" id="from_email" name="from_email" required>
-                <span class="focus"></span>
+
+            <div class="project-box">
+                <img src="images/project3.jpg" alt="">
+                <div class="project-layer">
+                    <h4>MP3 Player</h4>
+                    <p>Développement d'un lecteur MP3 avec C# / WPF.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="images/project4.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Tic Tac Toe</h4>
+                    <p>Implémentation du jeu du Morpion en mode console avec C#.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="images/project5.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Hunter Assassin Clone</h4>
+                    <p>Création d'une version minimaliste du jeu Hunter Assassin en C / C++ avec SDL2.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="images/project6.jpg" alt="">
+                <div class="project-layer">
+                    <h4>AZERTYPE</h4>
+                    <p>Développement d'une application web, AZERTYPE, en JavaScript pour améliorer la vitesse de frappe au clavier.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
             </div>
         </div>
-        <div class="input-box">
-            <div class="input-field">
-                <input type="tel" placeholder="Numéro de Téléphone" id="from_tel" name="from_tel" required>
-                <span class="focus"></span>
+    </section>
+
+
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
             </div>
-            <div class="input-field">
-                <input type="text" placeholder="Sujet du Message" id="from_subject" name="from_subject" required>
-                <span class="focus"></span>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
             </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2024 Bah Mamadou. Tous droits réservés.</p>
         </div>
-        <div class="textarea-field">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre Message" required></textarea>
-            <span class="focus"></span>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
-        <div class="btn-box btns">
-            <input type="submit" class="btn" id="button" value="Send Email">
-        </div>
-    </form>
-
-</section>
+    </footer>
 
 
-<!-- footer design -->
-<footer class="footer">
-    <div class="footer-text">
-        <p>Droit d'auteur &copy; 2023 par BAH Mamadou | Tous droits réservés.</p>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <span class="animate scroll" style="--i:1;"></span>
-    </div>
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <div class="footer-iconTop">
-        <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
-
-        <span class="animate scroll" style="--i:3;"></span>
-    </div>
-</footer>
-
-
-    
-  <!-- Integration de L'API emailJS -->
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script type="text/javascript">
-    emailjs.init('nU-laLtZMg290t6Hc')
-</script>
-  <script src="assets/js/script.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
