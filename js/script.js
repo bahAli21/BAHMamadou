@@ -75,3 +75,74 @@ document.getElementById('toggleBtn').addEventListener('click', function() {
         this.textContent = 'Read More';
     }
 });
+
+/******Sent Message*******/
+const btn = document.querySelector('.btn');
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    btn.value = 'Sending...';
+
+    const serviceID = 'default_service';
+    const templateID = 'template_siqlli9';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.value = 'Send Message';
+            alert('Your message has been sent successfully! Thank you for reaching out.');
+        }, (err) => {
+            btn.value = 'Send Message';
+            alert(JSON.stringify(err));
+        });
+});
+
+/************Project LINK *******************/
+/*
+    Ce script sélectionne tous les liens à l'intérieur des éléments ayant la classe .project-layer,
+    puis ajoute un gestionnaire d'événements click à chacun d'eux. Lorsque le lien est cliqué,
+    il récupère le texte du titre du projet associé et l'affiche dans l'alerte.
+*/
+// je sélectionne tous les liens dans la classe project-layer
+const projectLinks = document.querySelectorAll('.project-layer a');
+
+// Pour chaque lien, j'ajoute un gestionnaire d'événements click
+projectLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Empêche le comportement par défaut du lien (redirection)
+        var popup = document.querySelector('.popup');
+        var github = document.querySelector('.github-link');
+        var youtub = document.querySelector('.youtub-link');
+        // je récupère le texte du titre du projet associé au lien cliqué
+        const projectName = this.parentNode.querySelector('h4').innerText;
+        if(projectName === "MP3 Player") {
+            github.setAttribute("href", "https://github.com/bahAli21/SoundSync");
+            youtub.setAttribute("href", "https://youtu.be/6594wsHxyKc?si=RN2Mm6AxL9Zzd6Oa");
+        }else if(projectName === "CleanUp Pro") {
+            github.setAttribute("href", "https://github.com/bahAli21/CleanUpPro-v1.0.0");
+            youtub.setAttribute("href", "https://mamadoualioubah.gumroad.com/l/CleanUpPro");
+        } else if(projectName === "AZERTYPE"){
+            github.setAttribute("href", "https://github.com/bahAli21/AzerType-Project-JS");
+            youtub.setAttribute("href", "https://bahali21.github.io/AzerType-Project-JS/");
+        }else if(projectName === "Hunter Assassin Clone"){
+            github.setAttribute("href", "https://github.com/bahAli21/HUNTER-ASSASSIN");
+            youtub.setAttribute("href", "https://bahali21.github.io/AzerType-Project-JS/");
+        }
+
+        popup.style.display = 'block';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var closeButton = document.getElementById('close');
+    var popup = document.querySelector('.popup');
+
+    closeButton.addEventListener('click', function() {
+        popup.style.display = 'none';
+    });
+});
+
+
+
+

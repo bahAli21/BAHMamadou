@@ -119,35 +119,17 @@
         </div>
     </section>
 
-   <!-- <section class="services" id="services">
-        <h2 class="heading">My <span>Skills</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi
-                    non laborum nisi alias iusto voluptatibus.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bxs-paint'></i>
-                <h3>Graphic Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi
-                    non laborum nisi alias iusto voluptatibus.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bx-bar-chart-alt'></i>
-                <h3>Digital Marketing</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi
-                    non laborum nisi alias iusto voluptatibus.</p>
-                <a href="#" class="btn">Read More</a>
+    <!-- popup -->
+    <div class=" popup">
+        <spa class="popup-close-btn" title="close" id="close">X</spa>
+        <div class="box-popup">
+            <h3>Explore the Code on GitHub and Check Out the Demo on YouTube! 🚀</h3>
+            <div class="social-media">
+                <a href="https://github.com/bahAli21" class="github-link"><i class='bx bxl-github'></i></a>
+                <a href="www.youtube.com/@mams5628" class="youtub-link"><i class='bx bxl-youtube'></i></a>
             </div>
         </div>
-    </section> -->
+    </div>
 
     <!-- project section design -->
     <section class="project" id="project">
@@ -216,19 +198,20 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form id="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Full Name" name="from_fullName" id="from_fullName">
+                <input type="email" placeholder="Email Address" name="from_email" id="from_email">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="tel" placeholder="Mobile Number" name="from_tel" id="from_tel">
+                <input type="text" placeholder="Email Subject" name="from_subject" id="from_subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
+
 
     <!-- footer design -->
     <footer class="footer">
@@ -241,6 +224,13 @@
         </div>
     </footer>
 
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('nU-laLtZMg290t6Hc')
+    </script>
 
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
