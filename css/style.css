@@ -45,17 +45,18 @@ body {
     display: none;
 }
 
-.popup .popup-close-btn {
+.popup .box-popup .popup-close-btn {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: -10px;
+    right: 0px;
     width: 40px;
     height: 40px;
     font-size: 30px;
     color: #FF0000;
     background: #fff;
     border-bottom: 1px solid var(--main-color);
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     text-align: center;
     margin-top: 10px;
     cursor: pointer;
@@ -69,7 +70,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 32%;
+    margin-left: 38%;
 }
 
 .box-popup h3 {
@@ -80,7 +81,7 @@ body {
 }
 
 .popup .box-popup {
-    width: 400px;
+    width: max-content;
     height: max-content;
     position: absolute;
     top: 50%;

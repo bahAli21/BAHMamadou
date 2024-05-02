@@ -13,19 +13,30 @@ let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+    // Déclenchement de la fonction à chaque défilement de la fenêtre
+    // Cette fonction gère la mise à jour de la classe "active" des liens de navigation en fonction de la section visible à l'écran.
 
-        if(top >= offset && top < offset + height) {
+    sections.forEach(sec => {
+        // Parcours de chaque section de la page
+        let top = window.scrollY; // Position de défilement verticale actuelle de la fenêtre
+        let offset = sec.offsetTop - 150; // Position de défilement de la section par rapport au haut de la fenêtre, avec un décalage de 150 pixels vers le haut
+        let height = sec.offsetHeight; // Hauteur de la section
+        let id = sec.getAttribute('id'); // ID de la section
+
+        if (top >= offset && top < offset + height) {
+            // Vérification si la position de défilement actuelle de la fenêtre est à l'intérieur de la section visible à l'écran
+
             navLinks.forEach(links => {
-                links.classList.remove('active');
+                // Parcours de tous les liens de navigation
+                links.classList.remove('active'); // Réinitialisation de la classe "active" pour tous les liens de navigation
+
+                // Sélection du lien de navigation correspondant à la section visible à l'écran
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+                // Ajout de la classe "active" à ce lien pour le marquer comme actif
             });
         };
     });
+
     /*==================== sticky navbar ====================*/
     let header = document.querySelector('header');
 
@@ -37,7 +48,20 @@ window.onscroll = () => {
 };
 
 
-/*==================== scroll reveal ====================*/
+/*==================== scroll reveal !tres important====================*/
+
+/*
+* ScrollReveal(): Ceci est un appel à la fonction ScrollReveal()
+* qui initialise l'objet ScrollReveal pour configurer les animations.
+.reveal(): C'est la méthode qui déclenche l'effet de révélation sur les éléments spécifiés.
+*  Elle prend deux paramètres :
+* le sélecteur des éléments à animer et un objet d'options pour personnaliser l'animation.
+'.home-content, .heading': C'est le sélecteur CSS qui cible les éléments à animer.
+*  Dans ce cas, les éléments avec les classes CSS 'home-content' et 'heading' seront animés.
+{ origin: 'top' }: C'est un objet d'options qui spécifie comment les éléments seront animés.
+*  Dans cet exemple, les éléments seront animés à partir du haut de la page.
+*  L'option origin est utilisée pour cela, avec la valeur 'top' qui indique que les éléments vont apparaître en provenance du haut.
+* */
 ScrollReveal({
     // reset: true,
     distance: '80px',
