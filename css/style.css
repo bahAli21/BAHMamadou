@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
+@import url("../carrousel/style.css"); /* import design Card CSS */
 * {
     margin: 0;
     padding: 0;
@@ -39,15 +39,16 @@ body {
     font-size: 8rem;
     text-align: center;
     margin: 5rem 0;
+    color: #0ef;
 }
 
 .education {
-    padding: 100px 15px;
+    padding: 30px 15px;
     background: var(--bg-color);
 }
 
 .education h2{
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .timeline-items{
@@ -108,7 +109,7 @@ body {
 .timeline-content{
     background-color: var(--bg-color);
     border: 3px solid var(--main-color);
-    padding: 30px 30px;
+    padding: 10px 10px;
     border-radius: 4rem;
     box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
@@ -121,14 +122,14 @@ body {
 }
 
 .timeline-content h3 {
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
     margin: 0 0 10px;
     font-weight: 500;
 }
 
 .timeline-content p {
-    font-size: 16px;
+    font-size: 12px;
     color: #fff;
     margin: 0 0 10px;
     font-weight: 300;
@@ -343,7 +344,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 5rem 4% 1rem;
 }
 
 .header {
