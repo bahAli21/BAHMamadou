@@ -27,9 +27,20 @@ html {
     overflow-x: hidden;
 }
 
+.social-media a:hover{
+    box-shadow: var(--main-color) -7px -7px 7px;
+}
+
 body {
-    background: var(--bg-color);
     color: var(--text-color);
+    background-image: linear-gradient(90deg, transparent 0%, transparent 88%,rgba(200, 200, 200,0.07) 88%,
+    rgba(200, 200, 200,0.07) 93%,transparent 93%, transparent 100%),
+    linear-gradient(135deg, transparent 0%, transparent 83%,
+            rgba(200, 200, 200,0.07) 83%, rgba(200, 200, 200,0.07) 91%,transparent 91%,
+            transparent 100%),linear-gradient(0deg, transparent 0%, transparent 43%,
+            rgba(200, 200, 200,0.07) 43%, rgba(200, 200, 200,0.07) 50%,transparent 50%,
+            transparent 100%),linear-gradient(135deg, transparent 0%, transparent 16%,
+            rgba(200, 200, 200,0.07) 16%, rgba(200, 200, 200,0.07) 56%,transparent 56%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
 }
 
 .header {
@@ -147,7 +158,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--second-bg-color);
+    background: var();
     z-index: -1;
     transition: .5s;
 }
@@ -198,7 +209,7 @@ body {
 .skills {
     min-height: auto;
     padding-bottom: 7rem;
-    background: var(--second-bg-color);
+    background: none;
 }
 
 
@@ -510,7 +521,7 @@ body {
 }
 
 .slider {
-    background-color: var(--bg);
+    background-color: var();
     padding: 1rem;
 
     display: grid;
@@ -875,7 +886,7 @@ span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--second-bg-color);
+    background: var();
 }
 
 .about-img img {
@@ -1140,12 +1151,15 @@ span {
 }
 
 .footer {
+    position: sticky;
+    bottom: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 .about-card{
     width: 700px;
@@ -1165,7 +1179,7 @@ span {
     height: 200px;
 }
 .footer-text p {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
 }
 
 .footer-iconTop a {
@@ -1205,7 +1219,7 @@ span {
     }
 
     .footer {
-        padding: 2rem 3%;
+        
     }
 }
 
@@ -1276,8 +1290,9 @@ span {
     }
 
     .my-picture-morph{
-        width: 97%;
-        height: 80%;
+        width: 100%;
+        height: 350px;
+
     }
 }
 
