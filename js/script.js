@@ -78,10 +78,9 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 /*==================== typed js ====================*/
 const typed = new Typed('.multiple-text', {
     strings : [
-        'Computer Science Student 👨‍🎓',
-        'Software Developer 💻👨‍💼',
-        'Mobile Developer 📱👨‍💻',
-        'Cybersecurity Enthusiast 🔒🖥️'
+        'Software Developer 💻',
+        'Mobile Developer 📱',
+        'Full-Stack Dev 💻'
     ],
     typeSpeed: 100,
     backSpeed: 100,
@@ -93,10 +92,10 @@ document.getElementById('toggleBtn').addEventListener('click', function() {
     var hiddenContent = document.getElementById('hiddenContent');
     if (hiddenContent.style.display === 'none') {
         hiddenContent.style.display = 'block';
-        this.textContent = 'Hide More';
+        this.textContent = 'Less';
     } else {
         hiddenContent.style.display = 'none';
-        this.textContent = 'Read More';
+        this.textContent = 'More';
     }
 });
 
@@ -104,6 +103,8 @@ document.getElementById('toggleBtn').addEventListener('click', function() {
 const btn = document.querySelector('.btn');
 const form = document.getElementById('contact-form');
 
+//A decommenter pour email js
+/*
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -121,6 +122,9 @@ form.addEventListener('submit', function(event) {
             alert(JSON.stringify(err));
         });
 });
+
+
+ */
 
 /************Project LINK *******************/
 /*
@@ -158,6 +162,7 @@ projectLinks.forEach(link => {
     });
 });
 
+/*
 document.addEventListener('DOMContentLoaded', function() {
     var closeButton = document.getElementById('close');
     var popup = document.querySelector('.popup');
@@ -166,6 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
         popup.style.display = 'none';
     });
 });
+*/
 
 
 

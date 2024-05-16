@@ -10,8 +10,7 @@
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/jpg" href="images/profile.jpg">
-    <!-- Fontawesome Link for Icons -->
-    <script src="carrousel/script.js" defer></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
     <!-- custom css -->
@@ -30,8 +29,8 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#education">Education</a>
-            <a href="#services">Skills</a>
-            <a href="#project">Project</a>
+            <a href="#skills">Skills</a>
+            <a href="#proj">Project</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -43,266 +42,396 @@
             <h1>BAH Mamadou</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
             <p>
-                Hello! I'm Bah Mamadou, a passionate 💻 software developer and cybersecurity enthusiast. I love building innovative solutions and securing digital assets.
-            </p>
-            <div class="social-media">
+                Hello! I'm Bah Mamadou, a passionate 💻 full-stack developer and cybersecurity enthusiast. I love building innovative solutions and securing digital assets. 🔒✨            </p>
+            <div class="social-media ">
                 <a href="https://github.com/bahAli21"><i class='bx bxl-github'></i></a>
                 <a href="https://www.linkedin.com/in/mamadou-bah-047979219/"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://twitter.com/bahAli21"><i class='bx bxl-twitter'></i></a>
                 <a href="www.youtube.com/@mams5628"><i class='bx bxl-youtube'></i></a>
             </div>
-            <a href="images/lettre.pdf" class="btn">Download CV</a>
+            <div class="btn-box"><a href="images/lettre.pdf" class="btn">CV BAH</a></div>
         </div>
 
         <!--<div class="home-img">
             <img src="images/profile.jpg" alt="">
         </div> -->
 
-        <div class="about-img home-img ">
-            <img src="images/profile.jpg" alt="my picture">
+        <div class="">
+            <img src="images/profile.jpg" alt="my picture" class="my-picture-morph">
         </div>
     </section>
 
     <!-- about section design -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/profile.jpg" alt="">
-        </div>
+    <div class="about" id="about">
 
         <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
+            <h2 class="heading about-heading">About <span>Me</span></h2>
             <h3>Software Developer & Student</h3>
             <p>Je suis Bah Mamadou, étudiant en licence informatique à l'UCBL. Passionné par la cybersécurité, j'apprends activement et travaille sur des projets pratiques. Actuellement, je me concentre sur le développement d'applications avec .NET Core WPF en C# et .NET MAUI en C# pour les applications mobiles.</p>
             <p id="hiddenContent" style="display: none;">En plus de mes études, je suis également impliqué dans des projets de développement logiciel en tant que développeur indépendant. Je suis particulièrement intéressé par la création d'applications innovantes qui résolvent des problèmes du monde réel et améliorent l'expérience utilisateur.
                 Mon objectif est de continuer à acquérir de l'expérience dans le domaine du développement logiciel tout en explorant de nouvelles technologies et en contribuant à des projets significatifs.</p>
-            <a id="toggleBtn" class="btn" style="cursor: pointer;">Read More</a>
-        </div>
-    </section>
-
-    <section class="education" id="education">
-        <h2 class="heading">Education</h2>
-        <div class="timeline-items">
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2020</div>
-                    <div class="timeline-content">
-                        <h3>BAC S</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            </p>
-                    </div>
-
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021</div>
-                    <div class="timeline-content">
-                        <h3>Université Bourgogne</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            </p>
-                    </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022</div>
-                    <div class="timeline-content">
-                        <h3>Université Claude Bernard Lyon 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            </p>
-                    </div>
-
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-content">
-                        <h3>Université Claude Bernard Lyon 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                           </p>
-                    </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- services section design -->
-    <!--<section id="services">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="container">
-
-            <div class="skills">
-                <h2>C#</h2>
-                <div class="progress-bar">
-                    <div class="csharp"><spa>75%</spa></div>
-                </div>
-            </div>
-
-            <div class="skills">
-                <h2>C++</h2>
-                <div class="progress-bar">
-                    <div class="cplusplus"><spa>69%</spa></div>
-                </div>
-            </div>
-
-            <div class="skills">
-                <h2>.NET CORE</h2>
-                <div class="progress-bar">
-                    <div class="dotnet"><spa>57%</spa></div>
-                </div>
-            </div>
-
-            <div class="skills">
-                <h2>JS</h2>
-                <div class="progress-bar">
-                    <div class="js"><spa>55%</spa></div>
-                </div>
-            </div>
-
-
-            <div class="skills">
-                <h2>PHP</h2>
-                <div class="progress-bar">
-                    <div class="php"><spa>50%</spa></div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- popup -->
-    <div class=" popup">
-
-        <div class="box-popup">
-            <spa class="popup-close-btn" title="close" id="close">X</spa>
-            <h3 class="oups-info">Explore the Code on GitHub and Check Out the Demo on YouTube! 🚀</h3>
-            <div class="social-media">
-                <a href="https://github.com/bahAli21" class="github-link"><i class='bx bxl-github'></i></a>
-                <a href="www.youtube.com/@mams5628" class="youtub-link"><i class='bx bxl-youtube'></i></a>
-            </div>
+            <div class="btn-box"><a id="toggleBtn" class="btn" style="cursor: pointer;">More</a></div>
         </div>
     </div>
 
-    <!-- project section design -->
-    <section class="project" id="project">
 
-        <div class="wrapper">
-            <!--<i id="left" class="fa-solid fa-angle-left"></i>-->
-            <div class="title">
-                <h2>My <sp>Project</sp></h2>
+    <!--======================================================================================-->
+
+    <!-- education section design -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2023 - 2024</div>
+                            <h3>Étudiant en L2 Informatique 🎓💻</h3>
+                            <p>Étudiant en Licence informatique 💻 passionné de technologie et de résolution de problèmes.
+                                Explorant 🌐 divers domaines, de la programmation au machine learning,
+                                pour contribuer à des innovations dans le domaine de l'informatique.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2023</div>
+                            <h3>Étudiant en L1 Mathématiques-Informatique 🎓💻</h3>
+                            <p>Passionné de mathématiques et d'informatique, explorant les synergies entre ces deux domaines
+                                fascinants pour résoudre des problèmes complexes et contribuer à l'innovation technologique. 🔍🖥️</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2019 - 2020</div>
+                            <h3>BAC S Mathématiques 🎓📊</h3>
+                            <p>Passionné par les mathématiques et ayant obtenu mon Baccalauréat en filière Scientifique. Fasciné par les défis que pose ce domaine,
+                                je suis maintenant motivé à explorer ses applications en informatique pour contribuer à l'innovation technologique. 📚💻</p>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
             </div>
-            <ul class="carousel container">
-                <li class="card card1">
-                    <div class="lines"></div>
-                    <div class="imgBx">
-                        <img src="images/coding_console.png" alt="cosole-project">
-                    </div>
-                    <div class="content">
-                        <div class="details">
-                            <h2 class="h2">Console Project</h2>
-                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#">OPEN</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="card card1">
-                    <div class="lines"></div>
-                    <div class="imgBx">
-                        <img src="images/coding_mobile.png" alt="mobile-project">
-                    </div>
-                    <div class="content">
-                        <div class="details">
-                            <h2 class="h2">Mobile Project</h2>
-                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#">OPEN</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="card card1">
-                    <div class="lines"></div>
-                    <div class="imgBx">
-                        <img src="images/coding_web.png" alt="web-project">
-                    </div>
-                    <div class="content">
-                        <div class="details">
-                            <h2 class="h2">Web Project</h2>
-                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#">OPEN</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="card card1">
-                    <div class="lines"></div>
-                    <div class="imgBx">
-                        <img src="images/coding_logiciel.png" alt="web-project">
-                    </div>
-                    <div class="content">
-                        <div class="details">
-                            <h2 class="h2">Software Project</h2>
-                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#">OPEN</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="card card1">
-                    <div class="lines"></div>
-                    <div class="imgBx">
-                        <img src="images/coding_mobile.png" alt="web-project">
-                    </div>
-                    <div class="content">
-                        <div class="details">
-                            <h2 class="h2">Mobile Project</h2>
-                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#">OPEN</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="card card1">
-                    <div class="lines"></div>
-                    <div class="imgBx">
-                        <img src="images/coding_web.png" alt="web-project">
-                    </div>
-                    <div class="content">
-                        <div class="details">
-                            <h2 class="h2">Web Project</h2>
-                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#">OPEN</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <!--<i id="right" class="fa-solid fa-angle-right"></i>-->
-        </div>
 
+            <div class="education-column">
+                <h3 class="title">Experience<span class="animate scroll" style="--i:5;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2017 - 2018</div>
+                            <h3>Developpement Web</h3>
+                            <p>🌐💻 Développement de site pour NexGenCoders : PHP/MySQL, JS.
+                                2 sem. Affichage projets & services, gestion utilisateurs/admin.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2018 - 2019</div>
+                            <h3>Developpement d'un logiciel</h3>
+                            <p>J'ai développé un logiciel de moniteur d'activité pour Mme Dolores de ENI Service. Le programme,
+                                réalisé en C# avec .NET Core et WPF, surveille en temps réel l'utilisation du CPU, la capacité de la RAM,
+                                l'espace libre/occupé des disques et les statistiques du réseau. Ce projet a été complété en une semaine.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2019 - 2020</div>
+                            <h3>Developpement Mobile</h3>
+                            <p>Création de l'application mobile 'studentNote' pour l'école Saint George de Guinée.
+                                Développée avec .NET MAUI en C#, l'application permet à l'école de publier les notes des élèves.
+                                Les élèves peuvent se connecter pour consulter leurs notes. 📱📚</p>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:6;"></span>
+                </div>
+            </div>
+        </div>
     </section>
 
 
+    <!--==================================================================================-->
+
+    <!--===============================MES SKILLS===========================-->
+
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills<span class="animate scroll" style="--i:2;"></span></h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>C# <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>JavaScript <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>C/C++ <span>65%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>PHP <span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Professional Skills<span class="animate scroll" style="--i:5;"></span></h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Web Design <span>55%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Web Development <span>87%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Mobile Developer <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Software Developer <span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:6;"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===========================================FIN MES SKILLS==============================-->
+    <!--========================================PROJECT=======================================-->
+    <h2 class="heading head-project">My <span>Projects</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+    <section class="slider" id="proj">
+
+        <div class="card">
+            <div class="card-content">
+                <img src="images/tictactoe.png" alt="" class="card-img">
+                <h1 class="card-title">Tic Tac Toe</h1>
+                <div class="card-body">
+                    <div class="card-star">
+                        <span class="rating-value">5.5</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p class="card-price">C#/JS</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn-project btn-success" href="https://bahali21.github.io/Tic-Tac-Toe-JS/">Demo</button>
+                    <button class="btn-project btn-border" href="https://github.com/bahAli21/Tic-Tac-Toe">Github</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="images/passwordGenerator.png" alt="" class="card-img">
+                <h1 class="card-title">Password Generator</h1>
+                <div class="card-body">
+                    <div class="card-star">
+                        <span class="rating-value">5.4</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p class="card-price">JavaScript</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn-project btn-success" href="https://bahali21.github.io/Password-Generator/">Demo</a>
+                    <a class="btn-project btn-border" href="https://github.com/bahAli21/Password-Generator">Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="images/qrcode.png" alt="" class="card-img">
+                <h1 class="card-title">QR Code Generator</h1>
+                <div class="card-body">
+                    <div class="card-star">
+                        <span class="rating-value">4.6</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p class="card-price">JavaScript</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn-project btn-success" href="https://bahali21.github.io/QR-Code-Generator/">Demo</a>
+                    <a class="btn-project btn-border" href="https://github.com/bahAli21/QR-Code-Generator">Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="images/lecteurmp3.jpg" alt="" class="card-img">
+                <h1 class="card-title">Player MP3</h1>
+                <div class="card-body">
+                    <div class="card-star">
+                        <span class="rating-value">4.7</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p class="card-price">C# WPF</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn-project btn-success" href="https://youtu.be/6594wsHxyKc?si=dkDGvGIu1WUy-ggl">Demo</a>
+                    <a class="btn-project btn-border" href="https://github.com/bahAli21/SoundSync">Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="images/calculator.png" alt="" class="card-img">
+                <h1 class="card-title">Calculator</h1>
+                <div class="card-body">
+                    <div class="card-star">
+                        <span class="rating-value">4.5</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p class="card-price">JavaScript</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn-project btn-success" href="https://bahali21.github.io/Calculator/">Demo</a>
+                    <a class="btn-project btn-border" href="https://github.com/bahAli21/Calculator">Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="images/api.png" alt="" class="card-img">
+                <h1 class="card-title">User API</h1>
+                <div class="card-body">
+                    <div class="card-star">
+                        <span class="rating-value">4.9</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p class="card-price">ASP .NET </p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn-project btn-success" href="#">Demo</a>
+                    <a class="btn-project btn-border" href="https://github.com/bahAli21/ASP.NET-User-API">Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="images/javascriptquiz.png" alt="" class="card-img">
+                <h1 class="card-title">Quiz JavaScript</h1>
+                <div class="card-body">
+                    <div class="card-star">
+                        <span class="rating-value">4.5</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p class="card-price">JavaScript</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn-project btn-success" href="https://bahali21.github.io/Quiz-JavaScript/">Demo</button>
+                    <button class="btn-project btn-border" href="https://github.com/bahAli21/Quiz-JavaScript">Github</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="images/hunterassassin.jpeg" alt="" class="card-img">
+                <h1 class="card-title">Hunter Assassin</h1>
+                <div class="card-body">
+                    <div class="card-star">
+                        <span class="rating-value">4.4</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p class="card-price">C/C++</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn-project btn-success" href="#">Demo</button>
+                    <button class="btn-project btn-border" href="https://github.com/bahAli21/HUNTER-ASSASSIN">Github</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--========================================FIN PROJECT====================================-->
+    <!--=====================================CONTACT==================================-->
 
     <!-- contact section design -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
+        <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-        <form id="contact-form">
+        <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Full Name" name="from_fullName" id="from_fullName">
-                <input type="email" placeholder="Email Address" name="from_email" id="from_email">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:3;"></span>
             </div>
+
             <div class="input-box">
-                <input type="tel" placeholder="Mobile Number" name="from_tel" id="from_tel">
-                <input type="text" placeholder="Email Subject" name="from_subject" id="from_subject">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:5;"></span>
             </div>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+
+                <span class="animate scroll" style="--i:7;"></span>
+            </div>
+
+            <div class="btn-box btns contact-btns">
+                <button type="submit" class="btn">Submit</button>
+
+                <span class="animate scroll" style="--i:9;"></span>
+            </div>
         </form>
     </section>
 
+    <!--=====================================FIN CONTACT=================================-->
 
     <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
-            <p>&copy; 2024 Bah Mamadou. Tous droits réservés.</p>
+            <p>&copy;Designed & Developed in Lyon by Mamadou💡</p>
+            <p>&copy; 2024 Bah Mamadou</p>
         </div>
 
         <div class="footer-iconTop">
