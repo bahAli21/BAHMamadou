@@ -100,11 +100,10 @@ document.getElementById('toggleBtn').addEventListener('click', function() {
 });
 
 /******Sent Message*******/
-const btn = document.querySelector('.btn');
+const btn = document.querySelector('.btn-contact');
 const form = document.getElementById('contact-form');
 
-//A decommenter pour email js
-/*
+
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -122,9 +121,6 @@ form.addEventListener('submit', function(event) {
             alert(JSON.stringify(err));
         });
 });
-
-
- */
 
 /************Project LINK *******************/
 /*
