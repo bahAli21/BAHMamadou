@@ -103,7 +103,6 @@ document.getElementById('toggleBtn').addEventListener('click', function() {
 const btn = document.querySelector('.btn-contact');
 const form = document.getElementById('contact-form');
 
-
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
