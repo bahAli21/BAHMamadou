@@ -79,7 +79,6 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 const typed = new Typed('.multiple-text', {
     strings : [
         'Software Developer 💻',
-        'Mobile Developer 📱',
         'Full-Stack Dev 💻'
     ],
     typeSpeed: 100,
